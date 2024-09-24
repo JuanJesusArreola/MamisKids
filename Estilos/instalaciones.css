@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+  #container1 img {
+    position: absolute;
+    /* Fija la imagen en la ventana */
+    top: 0%;
+    /* En la parte superior */
+    left: 0%;
+    /* En la esquina izquierda */
+    width: 5%;
+    /* Ancho del 5% de la ventana */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+/* Contenedor del carrusel para ocupar toda la altura de la pantalla */
+.carousel-container {
+  padding-top: 1.5rem;
+    height: 100vh; /* Hace que el carrusel ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+Establece que el contenedor del carrusel ocupe el 100% de la altura del viewport (100vh).
+Utiliza flexbox para centrar el carrusel tanto horizontal como verticalmente.
+*/
+
+/* Estilos para el carrusel y sus elementos internos */
+.carousel {
+    top: 1.5vw;
+    height: 85%;
+    width: 95%;
+}
+/* 
+Mueve el carrusel ligeramente hacia abajo con 'top: 1.5vw'.
+Establece que el carrusel ocupe el 85% de la altura y el 95% del ancho del contenedor padre.
+*/
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+/* 
+Establece que el contenedor interno del carrusel ocupe el 100% de la altura y el ancho del carrusel.
+*/
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+/* 
+Establece que cada ítem del carrusel ocupe el 100% de la altura y el ancho del contenedor.
+*/
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* 
+Establece que cada imagen dentro de los ítems del carrusel ocupe el 100% de la altura y el ancho del contenedor.
+Usa 'object-fit: cover' para asegurar que las imágenes cubran todo el área del contenedor sin distorsionarse.
+*/
+
+.content {
+  min-height: calc(100vh - 100px); /* Ajusta esto según la altura del footer */
+}
+
+.footer {
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px; /* Ajusta este tamaño según tus necesidades */
+  height: 30px; /* Asegura que las imágenes sean cuadradas */
+}
+
+.privacy-link {
+  display: block;
+  margin-top: 10px;
+  color: black;
+ /* color: #333; */
+  text-decoration: none;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 870px) {
+    .carousel {
+        height: 30%;
+        width: 100%;
+    }
+    
+}
+/* 
+Media query para pantallas con un ancho máximo de 870px.
+Reduce la altura del carrusel al 30% y establece el ancho al 100% en dispositivos más pequeños.
+*/
+
+@media screen and (max-width: 750px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+
+/* Media Query para pantalla de tamaño máximo de 670px */
+@media screen and (max-width: 870px) {
+    #container1 img {
+        width: 8%;
+        /* Ancho del 70% para la primera imagen */
+        height: auto;
+        /* Mantener la proporción de la imagen */
+    }
+}
+

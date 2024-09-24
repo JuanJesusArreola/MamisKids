@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Estilos/contactos.css">
+   
+</head>
+<body>
+     <!-- Header -->
+     <header>
+        <!-- Barra de navegación -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="especialidadBtn">Especialidad</a>
+            <ul class="submenu">
+              <li><a href="Especialidad.html">Terapia Psicológica</a></li>
+              <li><a href="Estimulacion.html">Estimulacion Temprana</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="CitasdBtn">Citas</a>
+            <ul class="submenu2">
+                <li><a href="terapiaPsico.html">Terapia Psicológica</a></li>
+                <li><a href="Citas.html">Estimulacion Temprana</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="Instalaciones.html" class="nav-link" id="instalacionesBtn">Instalaciones</a></li>
+          <li class="nav-item"><a href="Trayectoria vanessa.html" class="nav-link" id="nosotrosBtn">Nosotros</a></li>
+          <li class="nav-item"><a href="contactos.html" class="nav-link" id="contactoBtn">Contacto</a></li>
+        </ul>
+    
+      </header>
+    <div class="container">
+        <div class="content max-w-3xl mx-auto py-12 md:py-16 px-4 md:px-6 ml-4">
+            <div class="space-y-6">
+                <div class="space-y-2 text-center">
+                    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">Contáctanos</h1>
+                    <p class="text-gray-500 contact-text">
+                        Ponte en contacto con nosotros para cualquier consulta o información.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold text-black">Teléfono</h3>
+                            <p class="text-black">+52 5521170100</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold text-black">Correo electrónico</h3>
+                            <p class="text-black">mamiskids@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold text-black">Dirección</h3>
+                            <p class="text-black">
+                                Reforma Norte 585 Colonia San Silverio
+                                <br>
+                                Comalcalco, Tabasco
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold text-black">Horario de atención</h3>
+                            <p class="text-black">
+                                Lunes a Viernes: 9:00 AM - 6:00 PM
+                                <br>
+                                Sábados: 10:00 AM - 4:00 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="float: right;"> 
+                    <div class="location">
+                      <h3>Ubicación</h3>
+                      <section class="contact-map">
+                        <div id="map"></div>
+                    </section>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+    <a href="Index.html">
+        <div id="container" class="logo">
+          <img src="Imagenes/Logo Mamis Kids.png" alt="Logo de Mami's Kids">
+        </div>
+      </a>
+      <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><img src="Imagenes/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="Imagenes/x.png" alt="Twitter"></a>
+            <a href="https://www.tiktok.com"><img src="Imagenes/tiktok.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com"><img src="Imagenes/instagram.png" alt="Instagram"></a>
+        </div>
+        <a href="aqui va el archivo de privacidad" class="privacy-link">Políticas de Privacidad</a>
+    </footer>
+
+    <script src="JS/contacto.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,547 @@
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+body{
+    background: #305CA2 45%;
+    font-family: Arial, sans-serif;
+       
+}
+/* Estilos para la barra de navegación */
+.nav-menu {
+    position: absolute;
+    top: 0.5rem;
+    /* Espacio desde la parte superior usando unidades relativas */
+    left: 0.5rem;
+    /* Espacio desde la izquierda usando unidades relativas */
+    right: 0.5rem;
+    /* Espacio desde la derecha usando unidades relativas */
+    background-color: #e43558;
+    /* Color de fondo de la barra de navegación */
+    padding: 0.5rem;
+    /* Relleno interior usando unidades relativas */
+    border-radius: 50px;
+    /* Bordes redondeados para la barra de navegación */
+    text-align: right;
+    /* Alinear el texto a la derecha */
+}
+
+.nav-menu {
+    list-style-type: none;
+    /* Eliminar los puntos de la lista */
+    padding: 0;
+    /* Eliminar el relleno interior */
+    margin: 0;
+    /* Eliminar el margen exterior */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-item {
+    position: relative;
+    /* Establecer posición relativa para los submenús */
+    display: inline-block;
+    /* Mostrar los elementos en línea */
+    list-style: none;
+    /* Eliminar el estilo de lista */
+    padding: 5px;
+    /* Relleno interior */
+    color: white;
+    /* Color del texto */
+    background-color: #ddd;
+    /* Color de fondo */
+    padding: 5px 10px;
+    /* Relleno interior ajustado */
+    margin-right: 18px;
+    /* Espacio a la derecha de cada elemento */
+    cursor: pointer;
+    /* Mostrar cursor de puntero al pasar el ratón */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    border: none;
+    /* Eliminar el borde */
+    background-color: transparent;
+    /* Hacer el fondo transparente */
+    font-size: 20.5px;
+    /* Tamaño de la fuente */
+}
+
+.nav-link {
+    display: block;
+    /* Mostrar como bloque */
+    padding: 10px 15px;
+    /* Relleno interior */
+    margin: 4px 0;
+    /* Margen superior e inferior */
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Eliminar subrayado */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Mostrar cursor de puntero al pasar el ratón */
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el submenú */
+.submenu {
+    display: none;
+    /* Ocultar submenú por defecto */
+    position: absolute;
+    /* Posición absoluta para superponer sobre otros elementos */
+    top: 100%;
+    /* Posicionar debajo del elemento principal */
+    left: 0;
+    /* Alinear a la izquierda del elemento principal */
+    background-color: #e43558;
+    /* Color de fondo del submenú */
+    padding: 2px;
+    /* Relleno interior */
+    list-style-type: none;
+    /* Eliminar los puntos de la lista */
+    margin: 0;
+    /* Eliminar el margen exterior */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra del submenú */
+    z-index: 1;
+    /* Asegurar que el submenú esté encima de otros elementos */
+    width: 10vw;
+    /* Ajustar el ancho del submenú */
+    text-align: center;
+}
+
+.submenu li {
+    margin: 5px 0;
+    /* Margen superior e inferior de los elementos del submenú */
+}
+
+.submenu li a {
+    display: block;
+    /* Mostrar como bloque */
+    padding: 10px 10px;
+    /* Relleno interior */
+    background-color: #e43558;
+    /* Color de fondo */
+    color: black;
+    /* Color del texto */
+    text-decoration: none;
+    /* Eliminar subrayado */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Alinear el texto al centro */
+    color: #ffffff;
+    /* Color del texto */
+}
+.container-boton{
+    position: absolute;
+    top: 70vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 15px 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  
+
+/*IMAGENES*/
+#container1 img {
+    position: absolute;
+    /* Fija la imagen en la ventana */
+    top: 0%;
+    /* En la parte superior */
+    left: 0%;
+    /* En la esquina izquierda */
+    width: 5%;
+    /* Ancho del 5% de la ventana */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+#containerIMG2 img{
+    position: absolute;
+    width: 100%;
+    height: 25vw;
+    left: 0vw;
+    right: 0vw;
+    top: 0vw;
+    z-index: -100;
+}
+
+#containerIMG3 img{
+    position: absolute;
+    top: 65vw;
+}
+/*contenido*/
+
+.h1-container{
+    position: absolute;
+    top: 13vw;
+    font-size: 3em;
+    left: 5vw;
+    color: white;
+    /* Color blanco para el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra de color negro semi-transparente */
+
+}
+
+.h2-container{
+    position: absolute;
+    top: 24vw;
+    width: 24%;
+    color: #ffffff;
+    left: 3vw;
+}
+
+.h2-container2{
+    position: absolute;
+    top: 34vw;
+    margin: 0;
+    width: 24%;
+    color: #ffffff;
+    left: 24vw;
+}
+.h2-container3{
+    position: absolute;
+    top: 24vw;
+    margin: 0;
+    width: 24%;
+    color: #ffffff;
+    left: 53vw;
+}
+
+.h2-container4{
+    position: absolute;
+    top: 35vw;
+    margin: 0;
+    width: 24%;
+    color: #ffffff;
+    left: 75vw;
+}
+.h1-container2{
+    position: absolute;
+    top: 50vw;
+    font-size: 2em;
+    left: 22vw;
+    color: white;
+    text-align: center;
+}
+.actividades{
+    position: absolute;
+    top: 65vw;
+    left: 60vw;
+    font-size: 45px;
+    color: #ffffff;
+}
+.container-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+
+  table.cal {
+	display:inline-block;
+	min-height:600px;
+	width:97%;
+	color: #06425c;
+	border-spacing:0;
+	border-radius: 20px 20px 20px 20px;
+	padding: 2%;
+	margin: 5%;
+}
+table > caption {
+	border: 5px solid  grey;
+	
+	border-radius: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #008080;
+	color: #ffffff;
+	font-size: 50px; 
+	padding:1% 1% 1% 1% ;
+	margin:2% 2% 2% 2% ;
+}
+thead> tr > th {
+     background-color : #29a6F6; 
+    border: 1px solid  white;
+    border-radius: 10px ; 
+    height:50px;
+    text-align:center;
+    vertical-align:center;
+    font-size : 25px;   
+     margin: 1%; padding:1%;
+    }
+
+tr:nth-child(odd) {
+	
+	border-radius: 10px 10px 10px 10px;
+	padding:1%;
+	margin:1%;
+}
+tr:nth-child(even) {
+		border-radius: 10px 10px 10px 10px;
+	padding:1%;
+	margin:1%;
+}
+tr:last-child {
+	border-radius: 0 0 10px 10px;
+	padding:1%;
+	margin:1%;
+}
+tr:last-child > td:first-child {
+	border-radius: 10px ;
+	padding:1%;
+	margin:1%;
+}
+tr:last-child > td:last-child {
+	padding:1%;
+	margin:1%;
+	border-radius: 10px;
+}
+
+table.cal>tbody> th,td
+ {
+	display:in-line;	
+		width:10%;margin: 2%;
+	padding:2%;
+	height:60px;
+		border: 2px outset white;
+	vertical-align:top;
+
+	text-align: center;
+	border-radius: 10px;
+}
+.horarios{
+    display: flex;
+    padding-left: 8%;    align-items: center;
+}
+th {
+	text-align: center;
+	background: #ffffff;
+	border: 2px outset grey;
+}
+
+.horas{
+	margin: 0;
+	padding: 0;
+	background-color:#FFD180 ;
+}
+.Lengua {
+	padding: 0;
+	margin: 0;
+	background-color: #A5D6A7; 
+    align-items: center;
+    text-align: center;
+	}
+.Mates{ padding:0; margin:0; background-color: #FF8A80; text-align: center; align-items: center;}
+.Ingles{ padding:0; margin:0; background-color: #B39DDB ;text-align: center}
+.Musica { padding:0; margin:0; background-color: #FFCDD2 ; text-align: center}
+.Tecno{ padding:0; margin:0; background-color:#d871db ; text-align: center}
+.Edfisica{ padding:0; margin:0; background-color:#BCAAA4; text-align: center;}
+.recreo {background-color:#FFffff;margin: 0; ;padding:0; text-align: center}
+span {
+	display: block;
+	text-align: center;
+	color: #800000;
+	visibility: hidden;
+}
+td:active > span {
+	visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-menu{
+        display: none;
+    }
+    /* Media Query para pantalla de tamaño máximo de 670px */
+@media screen and (max-width: 870px) {
+    #container1 img {
+        width: 11%;
+        /* Ancho del 70% para la primera imagen */
+        height: auto;
+        /* Mantener la proporción de la imagen */
+        
+    }
+}
+ #containerIMG2 img{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 26vw;
+}
+
+#containerIMG3 img{
+    position: absolute;
+    display: none;
+}
+
+    .h1-container {
+        font-size: 6vw;
+        color: #fcf9f9;
+        top: 6vw;
+        width: 70%;
+        max-width: 35%;
+        left: 6vw;
+    }
+
+    .h2-container{
+        position: absolute;
+        top: 24vw;
+        width: 45%;
+        color: #ffffff;
+        left: 3vw;
+        font-size: 10px;
+        margin: 0;
+    }
+    
+    .h2-container2{
+        position: absolute;
+        top: 65vw;
+        width: 45%;
+        color: #ffffff;
+        left: 6vw;
+        font-size: 10px;
+    }
+    .h2-container3{
+        position: absolute;
+        top: 24vw;
+        width: 45%;
+        color: #ffffff;
+        left: 53vw;
+        font-size: 10px;
+    }
+    
+    .h2-container4{
+        position: absolute;
+        top: 65vw;
+        font-size: 10px;
+        width: 45%;
+        color: #ffffff;
+        left: 55vw;
+    }
+    .h1-container2{
+        position: absolute;
+        top: 115vw;
+        font-size: 12px;
+        left: 0vw;
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    .actividades{
+        position: absolute;
+        top: 130vw;
+        left: 30vw;
+        font-size: 16px;
+        color: #ffffff;
+    }
+}
+
+.submenu2 {
+    display: none;  
+    position: absolute;  
+    top: 100%;  
+    left: 0;  
+    background-color: #e43558; 
+    padding: 2px;  
+    list-style-type: none;  
+    margin: 0;  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+    z-index: 1;  
+    width: 10vw;  
+    text-align: center;
+}
+
+.submenu2 li {
+    margin: 5px 0;  
+}
+
+.submenu2 li a {
+    display: block;  
+    padding: 10px 10px;  
+    background-color: #e43558;  
+    color: black;  
+    text-decoration: none;  
+    border-radius: 4px;  
+    text-align: center;  
+    color: #ffffff;  
+}
+
+.submenu2 li a:hover {
+    background-color: #ddd;  /* Añade esta línea para mejorar la experiencia del usuario */
+}
+
+.content {
+    min-height: calc(100vh - 100px); /* Ajusta esto según la altura del footer */
+}
+
+.footer {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 97%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta este tamaño según tus necesidades */
+    height: 30px; /* Asegura que las imágenes sean cuadradas */
+}
+
+.privacy-link {
+    display: block;
+    margin-top: 10px;
+    color: black;
+   /* color: #333; */
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}

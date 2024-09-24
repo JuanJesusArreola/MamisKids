@@ -1,0 +1,334 @@
+/* Contenedor del header */
+header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 1.2rem;
+    background-color: #2980b9;
+    border-radius: 30px;
+    margin: 20px;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* Botón de menú móvil */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-item {
+    margin-right: 18px;
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 20px;
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-close {
+    display: none;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(255, 105, 180, 0.4);
+    /* Sombra rosada */
+}
+
+/* Submenú */
+.submenu,
+.submenu2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 2px;
+    list-style-type: none;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.submenu li,
+.submenu2 li {
+    margin: 5px 0;
+}
+
+.submenu li a,
+.submenu2 li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #2980b9;
+    text-decoration: none;
+    border-radius: 4px;
+    border-left: 4px solid #2980b9;
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.submenu li a:hover,
+.submenu2 li a:hover {
+    background-color: #f8bbd0;
+    /* Fondo rosado */
+    color: #ffffff;
+    /* Texto blanco */
+    border-left: 4px solid #f06292;
+    /* Borde rosado más intenso */
+}
+
+.nav-item:hover .submenu,
+.nav-item:hover .submenu2 {
+    display: block;
+}
+
+.nav-button:hover {
+    background-color: #bbb;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+    /* Contenedor del menú de navegación */
+    .nav-container {
+        position: relative;
+        width: 100%;
+    }
+
+    /* Estilos para la barra de navegación */
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        height: 60px;
+        background-color: #1e2a38;
+        color: #fff;
+        z-index: 1001;
+        /* Asegura que esté encima del fondo oscuro */
+    }
+
+    /* Contenedor del menú de navegación */
+    .nav-menu {
+        display: none;
+        /* Oculto por defecto */
+        position: fixed;
+        /* Posición fija para cubrir toda la pantalla */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        /* Ancho completo de la vista */
+        height: 100vh;
+        /* Alto completo de la vista */
+        background-color: rgba(30, 42, 56, 0.9);
+        /* Color oscuro con opacidad */
+        z-index: 1000;
+        /* Asegura que el menú esté sobre el contenido */
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+        /* Inicialmente oculto fuera de la vista */
+        display: flex;
+        flex-direction: column;
+        /* Alinea los elementos en columna */
+        align-items: center;
+        /* Centra horizontalmente los elementos */
+        justify-content: center;
+        /* Centra verticalmente los elementos */
+    }
+
+    .nav-close {
+        display: block;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        /* Muestra el menú */
+        transform: translateX(0);
+        /* Muestra el menú */
+    }
+
+    /* Estilo del botón de cierre */
+    .nav-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .nav-close:hover {
+        color: #f39c12;
+    }
+
+    /* Estilo del logo en el menú móvil */
+    .logo {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: -80%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    /* Estilo de los ítems de navegación */
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 1rem;
+        width: 100%;
+        color: #fff;
+        background-color: transparent;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 0;
+        position: relative;
+        overflow: hidden;
+        box-shadow: none;
+        /* Asegura que no haya sombra en los enlaces */
+    }
+
+    .nav-link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease-in-out;
+        transform: scaleX(0);
+        transform-origin: left;
+        z-index: 1;
+        box-shadow: none;
+        /* Asegura que el pseudoelemento no tenga sombra */
+    }
+
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+
+    /* Estilo de los submenús */
+    .submenu,
+    .submenu2 {
+        display: none;
+        position: relative;
+        /* Cambiado de absolute a relative */
+        top: 0;
+        /* Alineación vertical ajustada */
+        left: 0;
+        width: 100%;
+        background-color: #34495e;
+        border-radius: 0;
+        /* Elimina los bordes redondeados en el submenú */
+        box-shadow: none;
+        /* Elimina la sombra del submenú */
+        z-index: 999;
+        margin: 0;
+        /* Asegura que no haya margen */
+        transition: opacity 0.3s, visibility 0.3s;
+        /* Suaviza la aparición y desaparición */
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-item:hover .submenu,
+    .nav-item:hover .submenu2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* Asegura que el submenú ocupe el ancho completo */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .submenu li,
+    .submenu2 li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submenu li a,
+    .submenu2 li a {
+        padding: 1rem;
+        color: #ecf0f1;
+        background-color: transparent;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .submenu li a:hover,
+    .submenu2 li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #f39c12;
+    }
+
+    /* Mostrar el botón de menú en pantallas pequeñas */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Fondo oscuro para el contenido de la página */
+    .overlay {
+        display: none;
+        /* Oculto por defecto */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Fondo oscuro con opacidad */
+        z-index: 999;
+        /* Debajo del menú pero sobre el contenido */
+    }
+
+    .overlay.show {
+        display: block;
+        /* Muestra el overlay cuando se abre el menú */
+    }
+}

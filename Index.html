@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mami's KIDS</title>
+    <link rel="stylesheet" href="Estilos/Styles.css" />
+    <link rel="stylesheet" href="Estilos/navStyle.css" />
+    <link rel="icon" href="Imagenes/Logo Mamis Kids.png" type="image/x-icon" />
+    <style>
+      /* Añadido para darle estilo al contenedor que mostrará el contenido cargado */
+      #hiddenPageContainer {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <!-- Botón para el menú móvil -->
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Logo -->
+        <a href="Index.html">
+          <img src="Imagenes/Logo Mamis Kids.png" alt="Logo" class="logo" />
+        </a>
+        <!-- Barra de navegación -->
+        <ul class="nav-menu">
+          <button class="nav-close" aria-label="Cerrar menú">&times;</button>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="especialidadBtn">Especialidad</a>
+            <ul class="submenu">
+              <li><a href="TerapiaPsico.html">Terapia Psicológica</a></li>
+              <li><a href="Estimulacion.html">Estimulacion Temprana</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="CitasdBtn">Citas</a>
+            <ul class="submenu2">
+              <li><a href="CitasTerapiPisco.html">Terapia Psicológica</a></li>
+              <li>
+                <a href="Citas-Estimulacion.html">Estimulacion Temprana</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="Instalaciones.html" class="nav-link" id="instalacionesBtn"
+              >Instalaciones</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="MisionVision.html" class="nav-link" id="nosotrosBtn"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contactos.html" class="nav-link" id="contactoBtn"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <!-- Overlay oscuro -->
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <!-- Contenido de la página de inicio -->
+    <div id="inicio" class="page">
+      <div class="h1-container">
+        <br /><br /><br />
+        <h1>"Ayúdame a hacerlo por mí mismo"</h1>
+      </div>
+      <div class="p">
+        <br /><br />
+        <p>-MARIA MONTESSORI</p>
+      </div>
+    </div>
+
+    <!-- Segunda imagen con ID "container2" -->
+    <div id="container2">
+      <img
+        src="Imagenes/Captura de pantalla 2024-05-12 110814.png"
+        alt="Descripción de la segunda imagen"
+      />
+    </div>
+    <div class="section" id="info-section">
+      <button class="boton" onclick="loadHiddenPage()">Saber Mas</button>
+    </div>
+    <!-- Contenedor para cargar el contenido -->
+    <div id="hiddenPageContainer"></div>
+
+    <script>
+      function loadHiddenPage() {
+        var container = document.getElementById("hiddenPageContainer");
+        if (
+          container.style.display === "none" ||
+          container.style.display === ""
+        ) {
+          fetch("servicios.html")
+            .then((response) => response.text())
+            .then((data) => {
+              container.innerHTML = data;
+              container.style.display = "block";
+              // Posicionar el contenedor debajo del botón
+              var buttonRect = document
+                .querySelector(".boton")
+                .getBoundingClientRect();
+              container.style.top = buttonRect.bottom + "px";
+              container.style.top = `calc(${buttonRect.bottom}px + 14vw)`;
+
+              // Desplazar la página hacia abajo para mostrar el contenido cargado
+              var sectionOffset = container.offsetTop;
+              window.scroll({
+                top: sectionOffset,
+                behavior: "smooth",
+              });
+            })
+            .catch((error) =>
+              console.error("Error al cargar la página:", error)
+            );
+        } else {
+          container.style.display = "none";
+        }
+      }
+    </script>
+    <script src="JS/scrip.js"></script>
+    <script src="JS/MenuMobile.js"></script>
+  </body>
+</html>

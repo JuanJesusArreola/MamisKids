@@ -1,0 +1,393 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Monserrat', sans-serif;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1007%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1008%26quot%3b)'%3e%3c/rect%3e%3cpath d='M509.5 588.26C681.36 577.43 806.65 255.88 1112.39 255.16 1418.14 254.44 1561.17 383.24 1715.29 383.96' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M767.2 560.28C912.18 520.77 957.92 122.93 1174.64 118.38 1391.37 113.83 1473.94 261.82 1582.09 263.98' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M738.81 593.25C854.61 503.6 786.17 67.2 985.13 61.75 1184.09 56.3 1341.41 291.02 1477.76 296.95' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M839.01 614.9C932.31 597.18 885.1 372.39 1121.51 360.93 1357.92 349.47 1539.17 194.7 1686.52 192.93' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M650.35 581.61C814.82 529.78 856.57 62.58 1097.07 56.02 1337.56 49.46 1424.5 221.27 1543.78 224.02' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1007'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1008'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+}
+
+/* Contenedor del formulario */
+.container-form {
+  margin-top: 4vw;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+  height: 520px;
+  max-width: 900px;
+  transition: all 1s ease;
+  margin-left: auto;
+  margin-right: auto;
+  /* Elimina el margen externo para centrado preciso */
+}
+
+.information {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: lightblue;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.info-childs h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.info-childs p {
+  margin: 15px 0;
+  color: #555;
+}
+
+.info-childs input {
+  background-color: transparent;
+  outline: none;
+  border: solid 2px #9191bd;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #9191bd;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+  background-color: #9191bd;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+/* Estilo para ajustar el ancho del input de horario */
+#horaCita {
+  width: 100%;
+  /* Hacemos que el ancho del select sea igual al 100% del contenedor */
+  box-sizing: border-box;
+  /* Mantenemos el ancho total del elemento, incluyendo el padding y el borde */
+  border: none;
+  outline: none;
+  padding: 10px;
+  /* Añadimos un relleno interno para evitar que el texto se corte */
+}
+
+
+/* Estilos para la información del formulario */
+.form-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+  padding: 0 30px;
+}
+
+.form-information-childs h2 {
+  position: absolute;
+  padding-left: 4.5%;
+  color: #333;
+  font-size: 2rem;
+}
+
+.form-information-childs p {
+  color: #555;
+}
+
+/* Estilos para los íconos */
+.icons {
+  margin: 15px 0;
+}
+
+.icons i {
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #9191bd;
+  border: solid thin #9191bd;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.icons i:hover {
+  background-color: #c7c7f3;
+  color: #fff;
+}
+
+/* Estilos para el formulario */
+.form {
+  margin: 30px 0 0 0;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-group-item {
+  flex: 1;
+  margin-right: 10px;
+  /* Espacio entre los inputs */
+}
+
+.input-group-item:last-child {
+  margin-right: 0;
+  /* Quitamos el margen derecho del último item */
+}
+
+.input-group-item label {
+  display: block;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  position: relative;
+}
+
+.form label input {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #333;
+}
+
+.form label i {
+  color: #a7a7a7;
+}
+
+.form input[type="submit"] {
+  background-color: #fff;
+  color: darkblue;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+/* Mensajes de alerta */
+.mensaje-exito {
+  color: green;
+  font-weight: bold;
+}
+
+.hide {
+  position: absolute;
+  transform: translateY(-300%);
+}
+
+.form .alerta {
+  width: 290px;
+  text-align: left;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-size: .8rem;
+}
+
+.form>.alerta-error,
+.form>.alerta-exito {
+  display: none;
+}
+
+.form .alertaError {
+  display: block;
+  background-color: #F66060;
+  padding: .5rem 1rem;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+
+.form .alertaExito {
+  display: block;
+  background-color: #46F660;
+  padding: .5rem 1rem;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+/* Tooltip de error */
+.tooltip {
+  visibility: hidden;
+  width: max-content;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: calc(100% + 10px);
+  /* Ajustamos la posición a un lado del campo */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent red transparent transparent;
+}
+
+.tooltip.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*RESPONSIVE FORM*/
+
+@media screen and (max-width:750px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  html {
+    font-size: 15px;
+  }
+
+
+
+  .container-form {
+    height: auto;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20px;
+    /* Aumentamos el margen superior */
+  }
+
+  .information {
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-information {
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+
+  .form-information-childs h2 {
+    position: relative;
+    padding-left: 0;
+    margin-left: 10%;
+    color: #333;
+    font-size: 2rem;
+  }
+}
+
+/* Estilos adicionales para dispositivos móviles */
+
+@media screen and (max-width: 400px) {
+  .container-form {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .form-information-childs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .flex-row label {
+    width: 100%;
+  }
+
+  .information {
+    padding: 15px;
+  }
+
+  .form-information {
+    padding: 15px;
+  }
+
+  .form-information-childs h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-childs p {
+    font-size: 0.8rem;
+  }
+
+  .form label input {
+    padding: 8px;
+  }
+
+  .icons i {
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  .form input[type="submit"] {
+    padding: 8px 12px;
+  }
+
+  .tooltip {
+    transform: translateY(450%);
+    /* Baja el tooltip un 10% más de la altura del elemento */
+  }
+
+
+}

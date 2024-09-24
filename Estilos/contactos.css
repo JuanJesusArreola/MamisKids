@@ -1,0 +1,511 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/* Estilos generales */
+body {
+    background-color: #EBF8FF;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.submenu2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e43558;
+    padding: 2px;
+    list-style-type: none;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 10vw;
+    text-align: center;
+}
+
+.submenu2 li {
+    margin: 5px 0;
+}
+
+.submenu2 li a {
+    display: block;
+    padding: 10px 10px;
+    background-color: #e43558;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.submenu2 li a:hover {
+    background-color: #ddd;
+    /* Añade esta línea para mejorar la experiencia del usuario */
+}
+
+/* Estilos para la barra de navegación */
+.nav-menu {
+    position: absolute;
+    top: 0.5rem;
+    /* Espacio desde la parte superior usando unidades relativas */
+    left: 0.5rem;
+    /* Espacio desde la izquierda usando unidades relativas */
+    right: 0.5rem;
+    /* Espacio desde la derecha usando unidades relativas */
+    background-color: #e43558;
+    /* Color de fondo de la barra de navegación */
+    padding: 0.5rem;
+    /* Relleno interior usando unidades relativas */
+    border-radius: 50px;
+    /* Bordes redondeados para la barra de navegación */
+    text-align: right;
+    /* Alinear el texto a la derecha */
+    z-index: 1000;
+    /* Un valor alto para asegurar que esté por encima de otros elementos */
+}
+
+.nav-menu {
+    list-style-type: none;
+    /* Eliminar los puntos de la lista */
+    padding: 0;
+    /* Eliminar el relleno interior */
+    margin: 0;
+    /* Eliminar el margen exterior */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-item {
+    position: relative;
+    /* Establecer posición relativa para los submenús */
+    display: inline-block;
+    /* Mostrar los elementos en línea */
+    list-style: none;
+    /* Eliminar el estilo de lista */
+    padding: 5px;
+    /* Relleno interior */
+    color: white;
+    /* Color del texto */
+    background-color: #ddd;
+    /* Color de fondo */
+    padding: 5px 10px;
+    /* Relleno interior ajustado */
+    margin-right: 18px;
+    /* Espacio a la derecha de cada elemento */
+    cursor: pointer;
+    /* Mostrar cursor de puntero al pasar el ratón */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    border: none;
+    /* Eliminar el borde */
+    background-color: transparent;
+    /* Hacer el fondo transparente */
+    font-size: 20.5px;
+    /* Tamaño de la fuente */
+}
+
+.nav-link {
+    display: block;
+    /* Mostrar como bloque */
+    padding: 10px 15px;
+    /* Relleno interior */
+    margin: 4px 0;
+    /* Margen superior e inferior */
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Eliminar subrayado */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Mostrar cursor de puntero al pasar el ratón */
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el submenú */
+.submenu {
+    display: none;
+    /* Ocultar submenú por defecto */
+    position: absolute;
+    /* Posición absoluta para superponer sobre otros elementos */
+    top: 100%;
+    /* Posicionar debajo del elemento principal */
+    left: 0;
+    /* Alinear a la izquierda del elemento principal */
+    background-color: #e43558;
+    /* Color de fondo del submenú */
+    padding: 2px;
+    /* Relleno interior */
+    list-style-type: none;
+    /* Eliminar los puntos de la lista */
+    margin: 0;
+    /* Eliminar el margen exterior */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra del submenú */
+    z-index: 1;
+    /* Asegurar que el submenú esté encima de otros elementos */
+    width: 10vw;
+    /* Ajustar el ancho del submenú */
+    text-align: center;
+}
+
+.submenu li {
+    margin: 5px 0;
+    /* Margen superior e inferior de los elementos del submenú */
+}
+
+.submenu li a {
+    display: block;
+    /* Mostrar como bloque */
+    padding: 10px 10px;
+    /* Relleno interior */
+    background-color: #e43558;
+    /* Color de fondo */
+    color: black;
+    /* Color del texto */
+    text-decoration: none;
+    /* Eliminar subrayado */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Alinear el texto al centro */
+    color: #ffffff;
+    /* Color del texto */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    margin-top: 8%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.bg-blue-100 {
+    background-color: #ebf8ff;
+}
+
+.max-w-3xl {
+    max-width: 48rem;
+    /* 768px */
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    /* 48px */
+    padding-bottom: 3rem;
+    /* 48px */
+}
+
+.md\:py-16 {
+    padding-top: 4rem;
+    /* 64px */
+    padding-bottom: 4rem;
+    /* 64px */
+}
+
+.px-4 {
+    padding-left: 1rem;
+    /* 16px */
+    padding-right: 1rem;
+    /* 16px */
+}
+
+.md\:px-6 {
+    padding-left: 1.5rem;
+    /* 24px */
+    padding-right: 1.5rem;
+    /* 24px */
+}
+
+.ml-4 {
+    margin-left: 1rem;
+    /* 16px */
+}
+
+.space-y-6> :not(:last-child) {
+    margin-bottom: 1.5rem;
+    /* 24px */
+}
+
+.space-y-2> :not(:last-child) {
+    margin-bottom: 0.5rem;
+    /* 8px */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    /* 30px */
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+.sm\:text-4xl {
+    font-size: 2.25rem;
+    /* 36px */
+}
+
+.text-gray-500 {
+    color: #718096;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gap-6 {
+    gap: 1.5rem;
+    /* 24px */
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+
+.rounded-lg {
+    border-radius: 0.5rem;
+    /* 8px */
+}
+
+.p-6 {
+    padding: 1.5rem;
+    /* 24px */
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+    /* 24px */
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-4 {
+    gap: 1rem;
+    /* 16px */
+}
+
+.text-black {
+    color: #000000;
+}
+
+.hover\:text-gray-900:hover {
+    color: #2d3748;
+}
+
+.h-6 {
+    height: 1.5rem;
+    /* 24px */
+}
+
+.w-6 {
+    width: 1.5rem;
+    /* 24px */
+}
+
+.contact-text {
+    color: #000;
+    /* Color negro */
+}
+
+.contact-text .font-bold {
+    color: #000;
+    /* Color negro */
+}
+
+.container {
+    position: relative;
+    /* Establece la posición relativa para el contenedor principal */
+}
+
+.card {
+    position: absolute;
+    left: 55%;
+    /* Ajusta la distancia desde el borde izquierdo */
+    top: 19%;
+    /* Ajusta la distancia desde el borde superior */
+    width: 700px;
+}
+
+
+.location {
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .card {
+        left: 5%;
+        /* Ajusta el margen izquierdo para dispositivos más pequeños */
+
+    }
+
+    .location img {
+        width: 60%;
+        /* Reduce el ancho máximo para dispositivos más pequeños */
+    }
+
+    .card {
+        position: absolute;
+        top: 88%;
+        /* Ajusta la distancia desde el borde superior */
+    }
+
+    .bg-social-container {
+        position: absolute;
+        top: 125%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}
+
+#container img {
+    position: absolute;
+    /* Fija la imagen en la ventana */
+    top: 0%;
+    /* En la parte superior */
+    left: 0%;
+    /* En la esquina izquierda */
+    width: 5%;
+    /* Ancho del 5% de la ventana */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+    z-index: 1000;
+}
+
+.contact-map {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #container img {
+        width: 7%;
+        /* Ajuste del ancho para pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container img {
+        width: 12%;
+        /* Ajuste del ancho para pantallas pequeñas */
+    }
+}
+
+.iconos {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    /* Asegura que la imagen se recorte y ajuste al tamaño especificado */
+    border-radius: 5px;
+}
+
+.content {
+    min-height: calc(100vh - 100px); /* Ajusta esto según la altura del footer */
+}
+
+.footer {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 97%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta este tamaño según tus necesidades */
+    height: 30px; /* Asegura que las imágenes sean cuadradas */
+}
+
+.privacy-link {
+    display: block;
+    margin-top: 10px;
+    color: black;
+   /* color: #333; */
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}

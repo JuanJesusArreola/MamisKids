@@ -1,0 +1,288 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente de la página */
+    margin: 0;
+    /* Eliminar margen predeterminado del body */
+    background-color: #473DC6;
+    /* Color de fondo del cuerpo */
+}
+
+/* Estilos para la barra de navegación */
+.nav-menu {
+    position: absolute;
+    top: 0.5rem;
+    /* Espacio desde la parte superior usando unidades relativas */
+    left: 0.5rem;
+    /* Espacio desde la izquierda usando unidades relativas */
+    right: 0.5rem;
+    /* Espacio desde la derecha usando unidades relativas */
+    background-color: #e43558;
+    /* Color de fondo de la barra de navegación */
+    padding: 0.5rem;
+    /* Relleno interior usando unidades relativas */
+    border-radius: 50px;
+    /* Bordes redondeados para la barra de navegación */
+    text-align: right;
+    /* Alinear el texto a la derecha */
+}
+
+.nav-menu {
+    list-style-type: none;
+    /* Eliminar los puntos de la lista */
+    padding: 0;
+    /* Eliminar el relleno interior */
+    margin: 0;
+    /* Eliminar el margen exterior */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-item {
+    position: relative;
+    /* Establecer posición relativa para los submenús */
+    display: inline-block;
+    /* Mostrar los elementos en línea */
+    list-style: none;
+    /* Eliminar el estilo de lista */
+    padding: 5px;
+    /* Relleno interior */
+    color: white;
+    /* Color del texto */
+    background-color: #ddd;
+    /* Color de fondo */
+    padding: 5px 10px;
+    /* Relleno interior ajustado */
+    margin-right: 18px;
+    /* Espacio a la derecha de cada elemento */
+    cursor: pointer;
+    /* Mostrar cursor de puntero al pasar el ratón */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    border: none;
+    /* Eliminar el borde */
+    background-color: transparent;
+    /* Hacer el fondo transparente */
+    font-size: 20.5px;
+    /* Tamaño de la fuente */
+}
+
+.nav-link {
+    display: block;
+    /* Mostrar como bloque */
+    padding: 10px 15px;
+    /* Relleno interior */
+    margin: 4px 0;
+    /* Margen superior e inferior */
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Eliminar subrayado */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Mostrar cursor de puntero al pasar el ratón */
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el submenú */
+.submenu {
+    display: none;
+    /* Ocultar submenú por defecto */
+    position: absolute;
+    /* Posición absoluta para superponer sobre otros elementos */
+    top: 100%;
+    /* Posicionar debajo del elemento principal */
+    left: 0;
+    /* Alinear a la izquierda del elemento principal */
+    background-color: #e43558;
+    /* Color de fondo del submenú */
+    padding: 2px;
+    /* Relleno interior */
+    list-style-type: none;
+    /* Eliminar los puntos de la lista */
+    margin: 0;
+    /* Eliminar el margen exterior */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra del submenú */
+    z-index: 1;
+    /* Asegurar que el submenú esté encima de otros elementos */
+    width: 10vw;
+    /* Ajustar el ancho del submenú */
+    text-align: center;
+}
+
+.submenu li {
+    margin: 5px 0;
+    /* Margen superior e inferior de los elementos del submenú */
+}
+
+.submenu li a {
+    display: block;
+    /* Mostrar como bloque */
+    padding: 10px 10px;
+    /* Relleno interior */
+    background-color: #e43558;
+    /* Color de fondo */
+    color: black;
+    /* Color del texto */
+    text-decoration: none;
+    /* Eliminar subrayado */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Alinear el texto al centro */
+    color: #ffffff;
+    /* Color del texto */
+}
+
+
+/*___________________________________________________________________________________________________________________________________*/
+/*Para que sea recursivo*/
+
+
+/*Los contenedores del texto*/
+.h1-container {
+    position: absolute;
+    top: 3vw;
+    left: 0;
+    width: 10%;
+    height: auto;
+    max-width: 90%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    /* Color blanco para el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra de color negro semi-transparente */
+
+}
+
+.h2-container {
+    position: absolute;
+    top: 40vw;
+    width: 15%;
+    max-width: 30%;
+    font-size: 15px;
+    color: white;
+    /* Color blanco para el texto */
+    left: 12vw;
+    text-align: center;
+
+}
+
+.h2-container2 {
+    position: absolute;
+    top: 40vw;
+    width: 16%;
+    max-width: 30%;
+    font-size: 15px;
+    color: white;
+    /* Color blanco para el texto */
+    left: 42vw;
+    text-align: center;
+}
+
+.h2-container3 {
+    position: absolute;
+    top: 40vw;
+    width: 20%;
+    max-width: 90%;
+    font-size: 15px;
+    color: white;
+    /* Color blanco para el texto */
+    left: 67vw;
+    text-align: center;
+}
+
+.h2-container4 {
+    position: absolute;
+    top: 46vw;
+    width: 45%;
+    max-width: 90%;
+    font-size: 20px;
+    color: white;
+    /* Color blanco para el texto */
+    left: 28vw;
+    text-align: center;
+}
+
+.p-container {
+    position: absolute;
+    top: 45vw;
+    width: 45%;
+    max-width: 90%;
+    font-size: 18px;
+    color: white;
+    /* Color blanco para el texto */
+    left: 28vw;
+    text-align: center;
+}
+
+/* Estilos para las imágenes dentro de los contenedores */
+#container img {
+    position: absolute;
+    /* Fija la imagen en la ventana */
+    top: 0%;
+    /* En la parte superior */
+    left: 0%;
+    /* En la esquina izquierda */
+    width: 5%;
+    /* Ancho del 5% de la ventana */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+
+/* Estilos para las imágenes dentro de los contenedores */
+#container1 img {
+    position: absolute;
+    /* Fija la imagen en la ventana */
+    top: 13vw;
+    /* En la parte superior */
+    left: 10vw;
+    /* En la esquina izquierda */
+    width: 18.6%;
+    /* Ancho del 5% de la ventana */
+    height: 28vw;
+}
+
+#container2 img {
+    position: absolute;
+    /* Fija la imagen en la ventana */
+    top: 13vw;
+    /* En la parte superior */
+    left: 40vw;
+    /* En la esquina izquierda */
+    width: 18.6%;
+    /* Ancho del 5% de la ventana */
+    height: 28vw;
+}
+
+#container3 img {
+    width: 18%;
+    /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    top: 13vw;
+    left: 68vw;
+    position: absolute;
+    height: 28vw;
+}
+
+@media screen and (max-width: 670px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+/* Media Query para pantalla de tamaño máximo de 670px */
+@media screen and (max-width: 870px) {
+    #container img {
+        width: 8%;
+        /* Ancho del 70% para la primera imagen */
+        height: auto;
+        /* Mantener la proporción de la imagen */
+    }
+}

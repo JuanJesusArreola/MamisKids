@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="translate" content="no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Estilos/Citas.css">
+    <title>Mami`s Kids</title>
+    <link rel="icon" href="Imagenes/Logo Mamis Kids.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="especialidadBtn">Especialidad</a>
+                <ul class="submenu">
+                    <li><a href="Especialidad.html">Terapia Psicológica</a></li>
+                    <li><a href="Estimulacion.html">Estimulacion Temprana</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="CitasdBtn">Citas</a>
+                <ul class="submenu2">
+                    <li><a href="terapiaPsico.html">Terapia Psicológica</a></li>
+                    <li><a href="Citas.html">Estimulacion Temprana</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="Instalaciones.html" class="nav-link" id="instalacionesBtn">Instalaciones</a>
+            </li>
+            <li class="nav-item"><a href="Trayectoria vanessa.html" class="nav-link" id="nosotrosBtn">Nosotros</a></li>
+            <li class="nav-item"><a href="contactos.html" class="nav-link" id="contactoBtn">Contacto</a></li>
+        </ul>
+
+    </header>
+    <a href="Index.html">
+        <div id="container1" class="logo">
+            <img src="Imagenes/Logo Mamis Kids.png" alt="Logo de Mami's Kids">
+        </div>
+    </a>
+    <div class="container-form calendar" id="calendarContainer">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Seleccione Fecha y Hora</h2>
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <form class="form form-register" id="calendarForm" novalidate>
+                    <div>
+                        <label>
+                            <i class='bx bx-calendar'></i>
+                            <input type="date" placeholder="Fecha de la cita" name="fechaCita" id="fechaCita"
+                                title="Selecciona una fecha para la cita">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-time'></i>
+                            <select name="horaCita" id="horaCita">
+                                <option value="9:00">9:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <!-- Agrega más opciones según tus necesidades -->
+                            </select>
+                        </label>
+                    </div>
+                    <input type="submit" value="Confirmar" id="btnConfirmar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sección Hero */
+.hero {
+    background: #4a90e2;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+}
+
+/* Sección de Servicios */
+.services {
+    padding: 50px 0;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service-content {
+    flex: 1; /* Ocupa todo el espacio disponible para el contenido */
+    text-align: center; /* Centra el contenido */
+}
+
+.service-image {
+    width: 50%; /* Ocupa la mitad del espacio para la imagen */
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    border-radius: 10px;
+    margin-right: 20px; /* Margen derecho entre la imagen y el texto */
+}
+
+.service:nth-child(even) .service-image {
+    margin-right: 0; /* En pares, elimina el margen derecho */
+    margin-left: 20px; /* Añade margen izquierdo */
+}
+
+.service:nth-child(even) .service-content {
+    text-align: center; /* Alinea el texto a la derecha en pares */
+}
+
+.service-title {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+.service-description {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.btn-cita {
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #4a90e2;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.btn-cita:hover {
+    background-color: #fff;
+    color: #4a90e2;
+    border-color: #000;
+}
+
+/* Media Queries para Responsividad */
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column; /* Cambia a disposición en columna */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .service-image {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+        margin-bottom: 20px; /* Margen inferior para separar de los elementos siguientes */
+        order: -1; /* Cambia el orden para que la imagen aparezca primero */
+    }
+}

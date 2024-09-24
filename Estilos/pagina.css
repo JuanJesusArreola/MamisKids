@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-blue-500 {
+    background-color: #2DA9E8;
+}
+
+.bg-blue-600 {
+    background-color: #2DA9E8;
+}
+
+.bg-blue-700 {
+    background-color: #fff;
+}
+
+.text-white {
+    color: black;
+}
+
+.text-gray-200 {
+    color: black;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-12 {
+    padding-top: 3.8 rem; /* Modificado */
+    padding-bottom: 3rem;
+}
+
+.md\:py-20 {
+    padding-top: .5rem; /* Modificado */
+    padding-bottom: 5rem;
+}
+
+.lg\:py-24 {
+    padding-top: 1rem; /* Modificado */
+    padding-bottom: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+.space-y-4 {
+    text-align: center; /* Agregado para centrar el texto */
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.tracking-tighter {
+    letter-spacing: -0.05em;
+}
+
+.sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.gap-8 {
+    grid-gap: 2rem;
+}
+
+.md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\:gap-12 {
+    grid-gap: 3rem;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}

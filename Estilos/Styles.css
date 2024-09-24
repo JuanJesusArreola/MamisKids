@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #2da9e8;
+    /* Color de fondo del cuerpo */
+}
+
+/* Estilos para los encabezados */
+.h1-container {
+    position: absolute;
+    align-items: center;
+    /* Alinear contenido al centro verticalmente */
+    height: 10px;
+    /* Altura deseada */
+    width: 80%;
+    text-align: center;
+    left: 15%;
+    top: 5vw;
+    max-width: 70%;
+}
+
+h1 {
+    color: white;
+    font-size: 72px;
+    margin: 10px 0 0;
+    /* Ajuste de margen: arriba 20px, derecha 0, abajo 0 */
+}
+
+.h2-container {
+    position: absolute;
+    top: 90vw;
+    width: 25%;
+    left: 6vw;
+    color: #ffffff;
+    max-width: 70%;
+    font-size: 16px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+    margin: 10px 0 0;
+    /* Ajuste de margen: arriba 20px, derecha 0, abajo 0 */
+}
+
+.h3-container {
+    position: absolute;
+    top: 90vw;
+    width: 25%;
+    left: 64vw;
+    color: #ffffff;
+    max-width: 70%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.h4-container {
+    position: absolute;
+    top: 53vw;
+    width: 25%;
+    left: 2.5vw;
+    color: #ffffff;
+    max-width: 100%;
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+}
+
+/* Estilos para el contenido de las páginas */
+
+/* Estilos para los párrafos */
+.p {
+    color: #d83479;
+    /* Color del texto del párrafo */
+    font-size: 46.6px;
+    /* Tamaño del texto */
+    position: absolute;
+    top: 14vw;
+    right: 10%;
+    max-width: 35%;
+    width: 20%;
+    text-align: center;
+}
+
+/* Estilos para la primera imagen */
+#container1 img {
+    position: absolute;
+    /* Fija la imagen en la ventana */
+    top: 0%;
+    /* En la parte superior */
+    left: 0%;
+    /* En la esquina izquierda */
+    width: 5%;
+    /* Ancho del 5% de la ventana */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para la segunda imagen */
+#container2 img {
+    position: absolute;
+    top: 26vw;
+    /* Distancia desde la parte superior de la pantalla */
+    left: 1cm;
+    /* Distancia desde el borde izquierdo */
+    height: 280px;
+    /* Reducir el ancho de la imagen al 50% */
+}
+
+.boton {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 40vw;
+    cursor: pointer;
+    border-radius: 5vw;
+    transition: background-color 0.3s, color 0.3s;
+    left: 45vw;
+}
+
+.boton:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 870px) {
+    #container1 img {
+        width: 8%;
+        /* Ancho del 70% para la primera imagen */
+        height: auto;
+        /* Mantener la proporción de la imagen */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .h1-container {
+        width: 75%;
+        max-width: 75%;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    h1 {
+        font-size: 28px;
+        /* Tamaño de fuente ajustado para dispositivos móviles */
+        margin: 10px 10px;
+        /* Ajuste de margen vertical */
+        color: #dedede;
+        /* Color del texto */
+    }
+
+    .h2-container,
+    .h3-container,
+    .h4-container {
+        position: relative;
+        /* Cambia a posición relativa para fluir con el contenido */
+        top: initial;
+        /* Elimina la posición absoluta */
+        left: initial;
+        /* Elimina la posición absoluta */
+        width: 50%;
+        /* Ocupa todo el ancho disponible */
+        max-width: 50%;
+        /* Ajusta el ancho máximo */
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .p {
+        position: relative;
+        /* Cambia a posición relativa para fluir con el contenido */
+        top: initial;
+        /* Elimina la posición absoluta */
+        right: initial;
+        /* Elimina la posición absoluta */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        max-width: 95%;
+        /* Ajusta el ancho máximo */
+        margin-top: 4rem;
+        /* Añade un margen superior */
+        text-align: right;
+        /* Centra el texto */
+        font-size: 20px;
+        /* Ajusta el tamaño del texto para dispositivos más pequeños */
+    }
+
+    .boton {
+        position: relative;
+        /* Cambia a posición relativa para fluir con el contenido */
+        top: initial;
+        /* Elimina la posición absoluta */
+        left: initial;
+        /* Elimina la posición absoluta */
+        margin: 20px auto;
+        /* Centra el botón y añade margen superior e inferior */
+        display: block;
+        /* Cambia a bloque para ocupar todo el ancho disponible */
+        width: 80%;
+        /* Ancho del botón */
+        border-radius: 10px;
+        /* Ajusta el radio de borde */
+    }
+
+    #container1 img,
+    #container2 img {
+        position: relative;
+        /* Cambia a posición relativa para fluir con el contenido */
+        top: initial;
+        /* Elimina la posición absoluta */
+        left: initial;
+        /* Elimina la posición absoluta */
+        width: 100%;
+        /* Ancho completo */
+        height: auto;
+        /* Altura automática para mantener la proporción */
+    }
+}

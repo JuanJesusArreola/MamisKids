@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mami's KIDS</title>
+    <link rel="stylesheet" href="Estilos/MisionVision.css" />
+    <link rel="stylesheet" href="Estilos/navStyle.css" />
+    <link rel="icon" href="Imagenes/Logo Mamis Kids.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <!-- Botón para el menú móvil -->
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Logo -->
+        <a href="Index.html">
+          <img src="Imagenes/Logo Mamis Kids.png" alt="Logo" class="logo" />
+        </a>
+        <!-- Barra de navegación -->
+        <ul class="nav-menu">
+          <button class="nav-close" aria-label="Cerrar menú">&times;</button>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="especialidadBtn">Especialidad</a>
+            <ul class="submenu">
+              <li><a href="TerapiaPsico.html">Terapia Psicológica</a></li>
+              <li><a href="Estimulacion.html">Estimulacion Temprana</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="CitasdBtn">Citas</a>
+            <ul class="submenu2">
+              <li><a href="CitasTerapiPisco.html">Terapia Psicológica</a></li>
+              <li>
+                <a href="Citas-Estimulacion.html">Estimulacion Temprana</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="Instalaciones.html" class="nav-link" id="instalacionesBtn"
+              >Instalaciones</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="MisionVision.html" class="nav-link" id="nosotrosBtn"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contactos.html" class="nav-link" id="contactoBtn"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <!-- Overlay oscuro -->
+        <div class="overlay"></div>
+      </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+      <canvas id="rainbow"></canvas>
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Mami's Kids</h1>
+          <p class="hero-subtitle">Desbloqueando el potencial de tus hijos</p>
+          <a href="curriculum.html" class="btn-cta">Conócenos Más</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Misión, Visión y Valores -->
+    <section class="services container">
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="Imagenes/mision.png"
+            alt="Icono de Visión"
+            class="card-icon"
+          />
+          <h2 class="card-title">Misión</h2>
+          <p class="card-description">
+            Ser una empresa con los más altos estándares en preparación continua
+            y enfocada a la salud mental, a través de la estimulación temprana y
+            terapias psicológicas en el estado de Tabasco.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="Imagenes/vision.png"
+            alt="Icono de Visión"
+            class="card-icon"
+          />
+          <h2 class="card-title">Visión</h2>
+          <p class="card-description">
+            Ser una empresa líder en la estimulación temprana y en terapias
+            psicológicas con personal altamente calificado y certificado en la
+            salud mental en el estado de Tabasco.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="Imagenes/valores.png"
+            alt="Icono de Valores"
+            class="card-icon"
+          />
+          <h2 class="card-title">Valores</h2>
+          <p class="card-description">
+            En nuestro trabajo, fomentamos activamente los valores de
+            honestidad, igualdad, libertad, equidad, respeto y sororidad.
+            Aplicamos estos valores en nuestra práctica diaria de psicoterapia y
+            estimulación temprana, utilizando enfoques funcionales,
+            experimentales, de estructuración y de relación para brindar un
+            ambiente inclusivo y de apoyo donde todos puedan alcanzar su máximo
+            potencial.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Mami's Kids. Todos los derechos reservados.</p>
+        <a href="#" class="privacy-link">Política de Privacidad</a>
+      </div>
+    </footer>
+
+    <!-- Script JavaScript para el menú desplegable -->
+    <script src="JS/MenuMobile.js"></script>
+    <script src="JS/FondoAnimado.js"></script>
+  </body>
+</html>

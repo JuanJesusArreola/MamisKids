@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="estilos/styleTPsico.css" />
+    <link rel="stylesheet" href="Estilos/navStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Formulario Terapia</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <!-- Botón para el menú móvil -->
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Logo -->
+        <a href="Index.html">
+          <img src="Imagenes/Logo Mamis Kids.png" alt="Logo" class="logo" />
+        </a>
+        <!-- Barra de navegación -->
+        <ul class="nav-menu">
+          <button class="nav-close" aria-label="Cerrar menú">&times;</button>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="especialidadBtn">Especialidad</a>
+            <ul class="submenu">
+              <li><a href="TerapiaPsico.html">Terapia Psicológica</a></li>
+              <li><a href="Estimulacion.html">Estimulacion Temprana</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="CitasdBtn">Citas</a>
+            <ul class="submenu2">
+              <li><a href="CitasTerapiPisco.html">Terapia Psicológica</a></li>
+              <li>
+                <a href="Citas-Estimulacion.html">Estimulacion Temprana</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="Instalaciones.html" class="nav-link" id="instalacionesBtn"
+              >Instalaciones</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="MisionVision.html" class="nav-link" id="nosotrosBtn"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contactos.html" class="nav-link" id="contactoBtn"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <!-- Overlay oscuro -->
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <!-- Inicio de la Pagina -->
+    <div class="container-form register">
+      <div class="information">
+        <div class="info-childs">
+          <h2>Tu salud mental en buenas manos</h2>
+          <p>Agenda una Cita</p>
+        </div>
+      </div>
+      <div class="form-information">
+        <div class="form-information-childs">
+          <h2>Datos</h2>
+          <br />
+          <form class="form form-register" id="citaForm" novalidate>
+            <div class="input-group">
+              <div class="input-group-item">
+                <label>
+                  <i class="bx bx-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Nombre del Paciente"
+                    name="nombrePaciente"
+                    id="nombrePaciente"
+                    minlength="2"
+                    maxlength="50"
+                    title="Ingresa tu nombre completo"
+                  />
+                </label>
+              </div>
+              <div class="input-group-item">
+                <label>
+                  <i class="bx bx-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Apellidos del Paciente"
+                    name="apellidosPaciente"
+                    id="apellidosPaciente"
+                    minlength="2"
+                    maxlength="50"
+                    title="Ingresa tus apellidos completos"
+                  />
+                </label>
+              </div>
+            </div>
+            <div>
+              <label>
+                <i class="bx bxs-cake"></i>
+                <input
+                  type="number"
+                  id="edadPaciente"
+                  placeholder="Edad"
+                  name="edadPaciente"
+                  min="1"
+                  max="120"
+                  title="Ingresa tu edad"
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                <i class="bx bx-message-square-detail"></i>
+                <input
+                  type="text"
+                  placeholder="Motivo de Consulta"
+                  name="MConsulta"
+                  id="motivoConsulta"
+                  minlength="2"
+                  maxlength="50"
+                  title="Describe brevemente el motivo de tu consulta"
+                />
+              </label>
+            </div>
+            <div class="input-group">
+              <div class="input-group-item">
+                <label>
+                  <i class="bx bx-user black-icon"></i>
+                  <input
+                    type="text"
+                    placeholder="Nombre del Tutor (Opcional)"
+                    name="nombreTutor"
+                    id="nombreTutor"
+                    minlength="2"
+                    maxlength="50"
+                    title="Ingresa tu nombre completo"
+                  />
+                </label>
+              </div>
+              <div class="input-group-item">
+                <label>
+                  <i class="bx bx-user black-icon"></i>
+                  <input
+                    type="text"
+                    placeholder="Apellidos del Tutor (Opcional)"
+                    name="apellidosTutor"
+                    id="apellidosTutor"
+                    minlength="2"
+                    maxlength="50"
+                    title="Ingresa tus apellidos completos"
+                  />
+                </label>
+              </div>
+            </div>
+            <div>
+              <label>
+                <i class="bx bx-phone"></i>
+                <input
+                  type="tel"
+                  placeholder="Teléfono"
+                  name="telefono"
+                  id="telefono"
+                  pattern="\d{10}"
+                  title="Ingresa tu número de teléfono (10 dígitos)"
+                />
+              </label>
+            </div>
+            <div class="input-group">
+              <div class="input-group-item">
+                <label>
+                  <i class="bx bx-calendar"></i>
+                  <input
+                    type="date"
+                    name="fechaCita"
+                    id="fechaCita"
+                    title="Selecciona una fecha para la cita"
+                  />
+                </label>
+              </div>
+            </div>
+            <div>
+              <label>
+                <i class="bx bx-envelope"></i>
+                <input
+                  type="email"
+                  placeholder="Correo Electrónico"
+                  name="correoElectronico"
+                  id="correoElectronico"
+                />
+              </label>
+            </div>
+            <input type="submit" value="Listo" id="btnListo" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="message"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/ValidadoresDeCitas.js"></script>
+    <script src="JS/scrip.js"></script>
+  </body>
+  <script src="JS/MenuMobile.js"></script>
+</html>

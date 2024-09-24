@@ -1,0 +1,47 @@
+/* footer.css */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.content {
+    min-height: calc(100vh - 100px); /* Ajusta esto según la altura del footer */
+}
+
+.footer {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 98%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta este tamaño según tus necesidades */
+    height: 30px; /* Asegura que las imágenes sean cuadradas */
+}
+
+.privacy-link {
+    display: block;
+    margin-top: 10px;
+    color: black;
+   /* color: #333; */
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
